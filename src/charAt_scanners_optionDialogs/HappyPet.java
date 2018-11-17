@@ -19,6 +19,9 @@ String Pet = JOptionPane.showInputDialog("what PeT dO yOU wAnt To boI(?)");
 					new String[] { "wash", "video tape for memes", "feed" }, null);
 
 			// 5. Use user input to call the appropriate method created in step 4.
+if(task==0) {
+
+}
 
 			// 6. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
@@ -28,15 +31,14 @@ String Pet = JOptionPane.showInputDialog("what PeT dO yOU wAnt To boI(?)");
 	// 4. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
-if(task==0){
-JOptionPane.showMessageDialog(null, "dog is wet");
+	}
+public void wash() {
+	JOptionPane.showMessageDialog(null, "dog is wet");
 }
-else if(task==1){
-JOptionPane.showMessageDialog(null, "dog feeling mlg");	
-}
-else if(task==2) {
-JOptionPane.showMessageDialog(null, "dog is full");	
-}
-}
-}
+//JOptionPane.showMessageDialog(null, "dog feeling mlg");
+//JOptionPane.showMessageDialog(null, "dog is full");
+	}
+
+
+
 
