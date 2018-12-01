@@ -3,16 +3,26 @@ package charAt_scanners_optionDialogs;
 import javax.swing.JOptionPane;
 
 public class choosestory {
-public static void main(String[] args) {
+	public static void main(String[] args) {
+		int task1 = JOptionPane.showOptionDialog(null, "What do you want to do", "Choice", 0,
+				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "wake up", "sleep" }, null);
 
-	int task=JOptionPane.showConfirmDialog(null, "Do you wake up");
-if(task==1) {JOptionPane.showMessageDialog(null, "sean says; die");
-}	
-if(task==0)	{JOptionPane.showConfirmDialog(null, "go to work");
-}
-if(task==1) {JOptionPane.showMessageDialog(null, "yo, you died");}
-if(task==0) {JOptionPane.showConfirmDialog(null, "do you bike home");}
-if(task==1) {JOptionPane.showMessageDialog(null, "yo, v sauce u slept and died");}
-if(task==0) {JOptionPane.showConfirmDialog(null, "do you play video games");}
-}
+		if (task1 == 1) {
+			JOptionPane.showMessageDialog(null, "You got killed by dumb memes");
+		}
+		if (task1 == 0) {
+			int task2 = JOptionPane.showOptionDialog(null, "What do you want to do", "Choice", 0,
+					JOptionPane.INFORMATION_MESSAGE, null, new String[] { "eat", "go to work" }, null);
+			if (task2 == 0) {
+			}
+			if (task2==1) {JOptionPane.showMessageDialog(null,"yo yo ucool, u surviv");}
+			int task3 = JOptionPane.showOptionDialog(null, "What do you want to do", "Choice", 0,
+					JOptionPane.INFORMATION_MESSAGE, null, new String[] { "pet tEh CaT", "call seanjedimaster" }, null);
+			if (task3==0) {JOptionPane.showMessageDialog(null, "the cat bites you ouch, you do not survive");}
+			if (task3==0) {JOptionPane.showMessageDialog(null, "you survived");}
+			int task4=JOptionPane.showConfirmDialog(null, "did you survive?");
+			if(task4==0) {JOptionPane.showMessageDialog(null,"good for you");}
+			if(task4==1) {JOptionPane.showMessageDialog(null, "nooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooob");}
+		}
+	}
 }
